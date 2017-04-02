@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DemoPodAndCartLib"
-  s.version      = "1.8.7"
-  s.summary      = "Test demo to create both Pod and carthage support lib."
+  s.version      = "0.0.1"
+  s.summary      = "A short description of DemoPodAndCartLib."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  Test demo to create both Pod and carthage support lib, this can be very use for an existed source project to support both pods and carthage
                    DESC
 
-  s.homepage     = "https://github.com/KoStudio/DemoPodAndCartLib.git"
+  s.homepage     = "http://EXAMPLE/DemoPodAndCartLib"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT "
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -64,7 +63,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "8.0"
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -80,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/KoStudio/DemoPodAndCartLib.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://EXAMPLE/DemoPodAndCartLib.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,15 +90,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
- # s.source_files  = "Classes", "Classes/**/*.{h,m}"
- # s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
-  s.source_files = 'DemoPodAndCartLib/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DemoPodLib' => ['DemoPodLib/Assets/*.png']
-  # }
-  
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -111,7 +104,6 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
@@ -137,7 +129,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

@@ -5,12 +5,14 @@
  如下：
  
  + 在podfile中添加
- 
- ```pod 'DemoPodAndCartLib' ```
+ ```ruby
+ pod 'DemoPodAndCartLib' 
+ ```
 
  + 或者，在carthage中添加：
- 
-  ````git "https://github.com/KoStudio/DemoPodAndCartLib.git"````
+  ```ruby
+  git "https://github.com/KoStudio/DemoPodAndCartLib.git"
+  ```
 
 ---
 ## 制作手顺
@@ -60,7 +62,7 @@
   > 
   > 同时会自动**push到KoSpec**服务器仓库，所在的目录结构也会变成：`KoSpecs/DemoPodAndCartLib/1.8.7/DemoPodLib.podspec`
   >
-    ```
+    ```ruby
    ├── Specs
        └── [SPEC_NAME]
           └── [VERSION]

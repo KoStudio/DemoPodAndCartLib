@@ -1,4 +1,4 @@
-#制作Pod和Carthage都支持的库
+# 制作Pod和Carthage都支持的库
 
 ## 目的
  发布共享代码，能同时使用pod和carthage管理framework
@@ -53,7 +53,8 @@
   > 生成：`DemoPodAndCartLib/1.8.7/DemoPodAndCartLib.podspec` 
   > 
   > 同时会自动**push到KoSpec**服务器仓库，所在的目录结构也会变成：`KoSpecs/DemoPodAndCartLib/1.8.7/DemoPodLib.podspec`
-  >```
+  >
+  ```
    ├── Specs
        └── [SPEC_NAME]
           └── [VERSION]
@@ -63,7 +64,7 @@
    >命令：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
 	  
   ----
-##使用手顺
+## 使用手顺
 
 ### Carthage中使用
 

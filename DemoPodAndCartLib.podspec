@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DemoPodAndCartLib"
-  s.version      = "0.0.1"
+  s.version      = "1.8.7"
   s.summary      = "Test demo to create both Pod and carthage support lib."
 
   # This description is used to generate tags and improve search results.

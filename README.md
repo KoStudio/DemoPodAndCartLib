@@ -6,7 +6,8 @@
 2. 制作*.podspec文件放在根目录下
   >命令：`pod spec create DemoPodAndCartLib`
   >然后修改相应配置
-  
+  >**注意修改版本号要和push到git仓库的tag一致**
+  >![podver](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_version.png)
 3. 在根目录下创建Classes 和Assets子目录用于放源码文件和资源文件
 
 4.  在根目录下创建Demo工程，用于写示例 (非必须)
@@ -29,15 +30,18 @@
 6. 将`DemoPodAndCartLib.podspec`发布到私有库`repo`或公有库`trunk`
   + 验证： 
   > 本地验证:  `pod lib lint` 
+ 
   > 远程验证:  `pod spec lint`
   
   发布：
   >  `pod repo push KoSpecs  DemoPodAndCartLib.podspec`
+ 
   >  或：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
   
   ##使用
   + Carthage
     > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
+ 
     > `carthage update --platform iOS`
   
   + Pod
@@ -49,5 +53,6 @@
 
 	2. podfile中使用
 	     >   `pod 'DemoPodAndCartLib' `
-         > `pod install`
+
+         > 运行：`pod install`
   

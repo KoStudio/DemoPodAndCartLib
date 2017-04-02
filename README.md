@@ -1,13 +1,17 @@
 #Pod和Carthage都支持的库
 
 ## 制作
-1. Xcode创建Dynamic Framework工程：`DemoPodAndCartLib`，并设置主framework为`Shared`
-![shared](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_carthage_shared.png)
+1. Xcode创建Dynamic Framework工程：`DemoPodAndCartLib`，
+> ![Alt text](./xcode_create_framework.png)
+并设置主framework为`Shared`
+> ![shared](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_carthage_shared.png)
+
 2. 制作*.podspec文件放在根目录下
   >命令：`pod spec create DemoPodAndCartLib`
   >然后修改相应配置
   >**注意修改版本号要和push到git仓库的tag一致**
   >![podver](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_version.png)
+
 3. 在根目录下创建Classes 和Assets子目录用于放源码文件和资源文件
 
 4.  在根目录下创建Demo工程，用于写示例 (非必须)
@@ -39,20 +43,32 @@
   >  或：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
   
   ##使用
-  + Carthage
-    > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
- 
-    > `carthage update --platform iOS`
+  ### Carthage
+   ####  下载编译：
+       > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
+       > 运行  `carthage update --platform iOS`
+
+  #### 配置
+     +  在`Target` 中的 
+   	   -  _`Embedded Binaries`_ 和
+       -  _`Linked Frameworks And Libraries`_中添加编译好的`framework`
+		 > ![cart_import](./xcode_carthage_import.png)
+
+		 
+    + 加入以下路径
+		在 _Target_ 中的 _Build Setting_ 中的 _Framework Search Path_ 项加入以下路径：
+      _`$(SRCROOT)/Carthage/Build/iOS`_
+      >(注意：直接通过鼠标右键_"`Add Exsit Files`"_添加到工程中时，会自动添加路径)
+
   
-  + Pod
-  _可能需要运行一次`pod repo KoSpecs`或删除`~/Library/Caches/CocoaPods/`下的`search_index.json`_
-      
-	1. 命令行中查询：
+### Pod  
+ (_可能需要运行一次`pod repo update KoSpecs`或删除`~/Library/Caches/CocoaPods/`下的`search_index.json`_)
+
+   #### 命令行中查询：
           > `pod search DemoPodAndCartLib`
-             > ![podsearch](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_search.png)
+          > ![podsearch](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_search.png)
 
-	2. podfile中使用
+   #### podfile中使用
 	     >   `pod 'DemoPodAndCartLib' `
-
-         > 运行：`pod install`
+         >  运行：`pod install`
   

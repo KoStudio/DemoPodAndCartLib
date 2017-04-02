@@ -1,22 +1,29 @@
 #Pod和Carthage都支持的库
 
-## 制作
+## 目的
+ 发布共享代码，能同时使用pod和carthage管理framework
+ 如下：
+ > + 在podfile中添加`pod 'DemoPodAndCartLib' `
+ > + 或在carthage中添加：`git "https://github.com/KoStudio/DemoPodAndCartLib.git"`
+
+## 制作手顺
 1. Xcode创建Dynamic Framework工程：`DemoPodAndCartLib`，
 > ![Alt text](./xcode_create_framework.png)
-并设置主framework为`Shared`
-> ![shared](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_carthage_shared.png)
 
-2. 制作*.podspec文件放在根目录下
+2. 并设置主framework为`Shared`
+>![Alt text](./xcode_carthage_shared.png)
+
+3. 制作*.podspec文件放在根目录下
   >命令：`pod spec create DemoPodAndCartLib`
   >然后修改相应配置
   >**注意修改版本号要和push到git仓库的tag一致**
-  >![podver](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_version.png)
+  > ![Alt text](./xcode_pod_version.png)
+  
+4. 在根目录下创建Classes 和Assets子目录用于放源码文件和资源文件
 
-3. 在根目录下创建Classes 和Assets子目录用于放源码文件和资源文件
+5.  在根目录下创建Demo工程，用于写示例 (非必须)
 
-4.  在根目录下创建Demo工程，用于写示例 (非必须)
-
-5. 上传到git仓库, 打上tag
+6. 上传到git仓库, 打上tag
   ```ruby
   ...
   git commit -a -m"add to git"
@@ -26,15 +33,17 @@
   ```
   
     **注意：发布之前要修改版本号：** 
-   > * `CFBundleShortVersionString`: 如：`1.8.7` //对应 `tags`
-   > ![shortversion](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_shortversion.png)
-   > * `CFBundleVersion` 如：255, (_在`taget`的`Build Settings`中搜索：`CURRENT_PROJECT_VERSION`)
-   > ![buildversion](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_buildversion.png)
+   > +  `CFBundleShortVersionString`: 如：`1.8.7` //对应 `tags`
+   > ![Alt text](./xcode_shortversion.png)
+   > 
+   > +  `CFBundleVersion` 如：255, (_在`taget`的`Build Settings`中搜索：`CURRENT_PROJECT_VERSION`)
+   > ![Alt text](./xcode_buildversion.png)
 
-6. 将`DemoPodAndCartLib.podspec`发布到私有库`repo`或公有库`trunk`
+
+7. 将`DemoPodAndCartLib.podspec`发布到私有库`repo`或公有库`trunk`
   + 验证： 
   > 本地验证:  `pod lib lint` 
- 
+  >
   > 远程验证:  `pod spec lint`
   
   发布：
@@ -42,8 +51,8 @@
  
   >  或：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
   
-  ##使用
-  ### Carthage
+  ##使用手顺
+  ### Carthage中使用
    ####  下载编译：
        > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
        > 运行  `carthage update --platform iOS`
@@ -52,23 +61,23 @@
      +  在`Target` 中的 
    	   -  _`Embedded Binaries`_ 和
        -  _`Linked Frameworks And Libraries`_中添加编译好的`framework`
-		 > ![cart_import](./xcode_carthage_import.png)
+		 > ![Alt text](./xcode_carthage_import.png)
 
-		 
     + 加入以下路径
 		在 _Target_ 中的 _Build Setting_ 中的 _Framework Search Path_ 项加入以下路径：
       _`$(SRCROOT)/Carthage/Build/iOS`_
       >(注意：直接通过鼠标右键_"`Add Exsit Files`"_添加到工程中时，会自动添加路径)
 
   
-### Pod  
+### Pod中使用
  (_可能需要运行一次`pod repo update KoSpecs`或删除`~/Library/Caches/CocoaPods/`下的`search_index.json`_)
 
-   #### 命令行中查询：
-          > `pod search DemoPodAndCartLib`
-          > ![podsearch](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_search.png)
+#### 命令行中查询：
+  `pod search DemoPodAndCartLib`
+ ![Alt text](./xcode_pod_search.png)
 
-   #### podfile中使用
-	     >   `pod 'DemoPodAndCartLib' `
-         >  运行：`pod install`
+#### podfile中使用
+  在podfile中添加：`pod 'DemoPodAndCartLib' `
+ 
+   运行：`pod install`
   

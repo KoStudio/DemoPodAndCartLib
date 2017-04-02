@@ -6,6 +6,7 @@
  > + 在podfile中添加`pod 'DemoPodAndCartLib' `
  > + 或在carthage中添加：`git "https://github.com/KoStudio/DemoPodAndCartLib.git"`
 
+---
 ## 制作手顺
 1. Xcode创建Dynamic Framework工程：`DemoPodAndCartLib`，
 > ![Alt text](./xcode_create_framework.png)
@@ -46,13 +47,26 @@
   >
   > 远程验证:  `pod spec lint`
   
-  发布：
-  >  `pod repo push KoSpecs  DemoPodAndCartLib.podspec`
- 
-  >  或：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
-  
+  + 发布到私有仓库`KoSpec`：
+  > 命令： `pod repo push KoSpecs  DemoPodAndCartLib.podspec`
+  > 完成后会在目录：`~/.cocoapods/repo/KoSpecs/`下 
+  > 生成：`DemoPodAndCartLib/1.8.7/DemoPodAndCartLib.podspec` 
+  > 
+  > 同时会自动**push到KoSpec**服务器仓库，所在的目录结构也会变成：`KoSpecs/DemoPodAndCartLib/1.8.7/DemoPodLib.podspec`
+  >```
+   ├── Specs
+       └── [SPEC_NAME]
+          └── [VERSION]
+ 	           └── [SPEC_NAME].podspec
+	```
++  或 发布到cocoapods公有仓库：
+   >命令：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
+	  
+  ----
 ##使用手顺
+
 ### Carthage中使用
+
 ####  下载编译：
  > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
   运行  `carthage update --platform iOS`

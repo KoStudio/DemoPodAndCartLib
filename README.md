@@ -22,7 +22,7 @@
   
     **注意：发布之前要修改版本号：** 
    > * `CFBundleShortVersionString`: 如：`1.8.7` //对应 `tags`
-   > ![shortversion](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_carthage_shortversion.png)
+   > ![shortversion](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_shortversion.png)
    > * `CFBundleVersion` 如：255, (_在`taget`的`Build Settings`中搜索：`CURRENT_PROJECT_VERSION`)
    > ![buildversion](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_buildversion.png)
 
@@ -45,7 +45,8 @@
       
 	1. 命令行中查询：
           > `pod search DemoPodAndCartLib`
-          
+             > ![podsearch](https://github.com/KoStudio/DemoPodAndCartLib/blob/master/xcode_pod_search.png)
+
 	2. podfile中使用
 	     >   `pod 'DemoPodAndCartLib' `
          > `pod install`

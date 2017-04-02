@@ -61,14 +61,13 @@
   > 生成：`DemoPodAndCartLib/1.8.7/DemoPodAndCartLib.podspec` 
   > 
   > 同时会自动**push到KoSpec**服务器仓库，所在的目录结构也会变成：`KoSpecs/DemoPodAndCartLib/1.8.7/DemoPodLib.podspec`
-  >
-    ```ruby
+
+```
    ├── Specs
        └── [SPEC_NAME]
           └── [VERSION]
  	           └── [SPEC_NAME].podspec
- 	           
-	```
+```
 	
 +  或 发布到`cocoapods`公有仓库：
    >命令：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
@@ -81,13 +80,13 @@
 
 ####  下载编译：
  > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
-  运行  `carthage update --platform iOS`
+ >  运行  `carthage update --platform iOS`
 
 #### 配置
 +  在`Target` 中的 
    	   -  _`Embedded Binaries`_ 和
        -  _`Linked Frameworks And Libraries`_中添加编译好的`framework`
-		 > ![Alt text](./xcode_carthage_import.png)
+		>  ![Alt text](./xcode_carthage_import.png)
 
  +  加入以下路径
 		在 _Target_ 中的 _Build Setting_ 中的 _Framework Search Path_ 项加入以下路径：

@@ -1,0 +1,10 @@
+framework module DemoPodAndCartLib {
+  umbrella header "DemoPodAndCartLib.h"
+
+  export *
+  module * { export * }
+}
+
+module DemoPodAndCartLib.Swift {
+    header "DemoPodAndCartLib-Swift.h"
+}

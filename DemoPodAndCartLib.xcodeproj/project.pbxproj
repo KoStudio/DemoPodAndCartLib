@@ -347,6 +347,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 255;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -368,6 +369,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 255;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -428,6 +430,7 @@
 				0CFA50C81E91547400DBC711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CFA50C91E91547400DBC711 /* Build configuration list for PBXNativeTarget "DemoPodAndCartLibTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +439,7 @@
 				0CFA50CB1E91547400DBC711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

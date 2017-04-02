@@ -1,0 +1,37 @@
+BCSymbolMap Version: 2.0
+___swift_noop_void_return
+___swift_memcpy8_8
+___swift_noop_self_return
+___swift_memcpy_array8_8
+___swift_memmove_array8_8
+_swift_rt_swift_slowAlloc
+_swift_rt_swift_slowDealloc
+__TMfV17DemoPodAndCartLib17DemoPodAndCartLib
+__TMRfV17DemoPodAndCartLib17DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftUIKit_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftCoreImage_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftDarwin_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftDispatch_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftFoundation_$_DemoPodAndCartLib
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_DemoPodAndCartLib
+___swift_reflection_version
+Apple LLVM version 8.1.0 (clang-802.0.38)
+-emit-bc /DevWorkSpace/XcodeWorkSpace/Ko-Workspace2/CodingNet/kmk/DemoPodAndCartLib/DemoPodAndCartLib/Classes/DemoPodAndCartLib.swift -target arm64-apple-ios10.3 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk -I /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Products/Release-iphoneos -F /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Products/Release-iphoneos -g -import-underlying-module -module-cache-path /Users/huminghua/Library/Developer/Xcode/DerivedData/ModuleCache -serialize-debugging-options -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DemoPodAndCartLib-generated-files.hmap -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DemoPodAndCartLib-own-target-headers.hmap -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DemoPodAndCartLib-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DemoPodAndCartLib-project-headers.hmap -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Products/Release-iphoneos/include -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DerivedSources/arm64 -Xcc -I/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DerivedSources -Xcc -ivfsoverlay -Xcc /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/unextended-module-overlay.yaml -Xcc -working-directory/DevWorkSpace/XcodeWorkSpace/Ko-Workspace2/CodingNet/kmk/DemoPodAndCartLib -emit-module-doc-path /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib.swiftdoc -serialize-diagnostics-path /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib.dia -O -parse-as-library -module-name DemoPodAndCartLib -emit-module-path /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib.swiftmodule -emit-objc-header-path /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib-Swift.h -emit-dependencies-path /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib.d -num-threads 4 -o /Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/Objects-normal/arm64/DemoPodAndCartLib.bc -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/DevWorkSpace/XcodeWorkSpace/Ko-Workspace2/CodingNet/kmk/DemoPodAndCartLib
+Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)
+/DevWorkSpace/XcodeWorkSpace/Ko-Workspace2/CodingNet/kmk/DemoPodAndCartLib/DemoPodAndCartLib/Classes/DemoPodAndCartLib.swift
+_TMaV17DemoPodAndCartLib17DemoPodAndCartLib
+DemoPodAndCartLib.swift
+/DevWorkSpace/XcodeWorkSpace/Ko-Workspace2/CodingNet/kmk/DemoPodAndCartLib/DemoPodAndCartLib/Classes
+get_field_types_DemoPodAndCartLib
+__swift_memmove_array8_8
+__swift_memcpy_array8_8
+__swift_noop_self_return
+__swift_memcpy8_8
+__swift_noop_void_return
+getCityCode
+init
+/Users/huminghua/Library/Developer/Xcode/DerivedData/DemoPodAndCartLib-haohvvghbbisnpgktviblsxgnaie/Build/Intermediates/DemoPodAndCartLib.build/Release-iphoneos/DemoPodAndCartLib.build/DerivedSources/DemoPodAndCartLib_vers.c

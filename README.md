@@ -1,15 +1,15 @@
 # 制作Pod和Carthage都支持的库
 
 ## 目的
- 发布共享代码，能同时使用pod和carthage管理framework
+ 发布共享代码，能同时使用`pod`和`carthage`管理framework
  如下：
  
- + 在podfile中添加
+ + 在`podfile`中添加
  ```ruby
  pod 'DemoPodAndCartLib' 
  ```
 
- + 或者，在carthage中添加：
+ + 或者，在`Cartfile`中添加：
   ```ruby
   git "https://github.com/KoStudio/DemoPodAndCartLib.git"
   ```
@@ -28,11 +28,11 @@
   >**注意修改版本号要和push到git仓库的tag一致**
   > ![Alt text](./xcode_pod_version.png)
   
-4. 在根目录下创建Classes 和Assets子目录用于放源码文件和资源文件
+4. 在根目录下创建`Classes` 和`Assets`子目录用于放源码文件和资源文件
 
 5.  在根目录下创建Demo工程，用于写示例 (非必须)
 
-6. 上传到git仓库, 打上tag
+6. 上传到git仓库, 打上`tag`
   ```ruby
   ...
   git commit -a -m"add to git"
@@ -70,7 +70,7 @@
  	           
 	```
 	
-+  或 发布到cocoapods公有仓库：
++  或 发布到`cocoapods`公有仓库：
    >命令：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
 	  
   ----

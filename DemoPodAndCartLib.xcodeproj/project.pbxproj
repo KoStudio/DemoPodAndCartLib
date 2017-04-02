@@ -10,6 +10,7 @@
 		0CFA50BC1E91547400DBC711 /* DemoPodAndCartLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFA50B21E91547300DBC711 /* DemoPodAndCartLib.framework */; };
 		0CFA50C11E91547400DBC711 /* DemoPodAndCartLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFA50C01E91547400DBC711 /* DemoPodAndCartLibTests.swift */; };
 		0CFA50C31E91547400DBC711 /* DemoPodAndCartLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFA50B51E91547400DBC711 /* DemoPodAndCartLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CFA50CF1E91558400DBC711 /* DemoPodAndCartLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFA50CE1E91558400DBC711 /* DemoPodAndCartLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0CFA50BB1E91547400DBC711 /* DemoPodAndCartLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoPodAndCartLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFA50C01E91547400DBC711 /* DemoPodAndCartLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPodAndCartLibTests.swift; sourceTree = "<group>"; };
 		0CFA50C21E91547400DBC711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFA50CE1E91558400DBC711 /* DemoPodAndCartLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPodAndCartLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,8 @@
 		0CFA50B41E91547300DBC711 /* DemoPodAndCartLib */ = {
 			isa = PBXGroup;
 			children = (
+				0CFA50CC1E91557000DBC711 /* Assets */,
+				0CFA50CD1E91557000DBC711 /* Classes */,
 				0CFA50B51E91547400DBC711 /* DemoPodAndCartLib.h */,
 				0CFA50B61E91547400DBC711 /* Info.plist */,
 			);
@@ -84,6 +88,21 @@
 				0CFA50C21E91547400DBC711 /* Info.plist */,
 			);
 			path = DemoPodAndCartLibTests;
+			sourceTree = "<group>";
+		};
+		0CFA50CC1E91557000DBC711 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0CFA50CD1E91557000DBC711 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0CFA50CE1E91558400DBC711 /* DemoPodAndCartLib.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +168,7 @@
 					0CFA50B11E91547300DBC711 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = D7G488KFCE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					0CFA50BA1E91547400DBC711 = {
@@ -198,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFA50CF1E91558400DBC711 /* DemoPodAndCartLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +345,7 @@
 		0CFA50C71E91547400DBC711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
@@ -336,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ko.DemoPodAndCartLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +366,7 @@
 		0CFA50C81E91547400DBC711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
@@ -362,6 +386,7 @@
 		0CFA50CA1E91547400DBC711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				INFOPLIST_FILE = DemoPodAndCartLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +399,7 @@
 		0CFA50CB1E91547400DBC711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D7G488KFCE;
 				INFOPLIST_FILE = DemoPodAndCartLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

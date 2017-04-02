@@ -3,8 +3,11 @@
 ## 目的
  发布共享代码，能同时使用pod和carthage管理framework
  如下：
- > + 在podfile中添加`pod 'DemoPodAndCartLib' `
- > + 或在carthage中添加：`git "https://github.com/KoStudio/DemoPodAndCartLib.git"`
+ > + 在podfile中添加
+ ```pod 'DemoPodAndCartLib' ```
+
+> + 或者，在carthage中添加：
+  ````git "https://github.com/KoStudio/DemoPodAndCartLib.git"````
 
 ---
 ## 制作手顺
@@ -60,6 +63,7 @@
           └── [VERSION]
  	           └── [SPEC_NAME].podspec
 	```
+	
 +  或 发布到cocoapods公有仓库：
    >命令：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
 	  

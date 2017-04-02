@@ -1,4 +1,4 @@
-#Pod和Carthage都支持的库
+#制作Pod和Carthage都支持的库
 
 ## 目的
  发布共享代码，能同时使用pod和carthage管理framework
@@ -51,19 +51,19 @@
  
   >  或：`pod trunk push KoSpecs  DemoPodAndCartLib.podspec`
   
-  ##使用手顺
-  ### Carthage中使用
-   ####  下载编译：
-       > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
-       > 运行  `carthage update --platform iOS`
+##使用手顺
+### Carthage中使用
+####  下载编译：
+ > `git "https://github.com/KoStudio/DemoPodAndCartLib.git" `
+  运行  `carthage update --platform iOS`
 
-  #### 配置
-     +  在`Target` 中的 
+#### 配置
++  在`Target` 中的 
    	   -  _`Embedded Binaries`_ 和
        -  _`Linked Frameworks And Libraries`_中添加编译好的`framework`
 		 > ![Alt text](./xcode_carthage_import.png)
 
-    + 加入以下路径
+ +  加入以下路径
 		在 _Target_ 中的 _Build Setting_ 中的 _Framework Search Path_ 项加入以下路径：
       _`$(SRCROOT)/Carthage/Build/iOS`_
       >(注意：直接通过鼠标右键_"`Add Exsit Files`"_添加到工程中时，会自动添加路径)

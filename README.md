@@ -17,15 +17,20 @@
 ---
 ## 制作手顺
 1. Xcode创建Dynamic Framework工程：`DemoPodAndCartLib`，
-> ![Alt text](./xcode_create_framework.png)
+ > ![Alt text](./xcode_create_framework.png)
 
 2. 并设置主framework为`Shared`
->![Alt text](./xcode_carthage_shared.png)
+ >![Alt text](./xcode_carthage_shared.png)
+ >
+ > + Carthage 测试验证
+	 命令：`carthage build --no-skip-current`
+		> 然后查看：`Carthage/Build`目录.		
+ > + _ 提供预编译zip (非必须)_
 
 3. 制作*.podspec文件放在根目录下
-  >命令：`pod spec create DemoPodAndCartLib`
-  >然后修改相应配置
-  >**注意修改版本号要和push到git仓库的tag一致**
+  > 命令：`pod spec create DemoPodAndCartLib`
+  > 然后修改相应配置
+  > **注意修改版本号要和push到git仓库的tag一致**
   > ![Alt text](./xcode_pod_version.png)
   
 4. 在根目录下创建`Classes` 和`Assets`子目录用于放源码文件和资源文件

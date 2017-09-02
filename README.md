@@ -1,5 +1,5 @@
-[(DemoPodAndCartLib](https://kostudio.github.io/DemoPodAndCartLib)
-# 制作Pod和Carthage都支持的库
+
+# [制作Pod和Carthage都支持的库](https://kostudio.github.io/DemoPodAndCartLib)
 
 ## 目的
  发布共享代码，能同时使用`pod`和`carthage`管理framework
